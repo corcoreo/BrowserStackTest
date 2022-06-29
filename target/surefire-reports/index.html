@@ -1,0 +1,3190 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 13 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Pool" class="navigator-link">
+              <span class="suite-name border-failed">Pool</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Pool" class="navigator-link ">
+                    <span>suite.testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Pool" class="navigator-link ">
+                    <span class="test-stats">10 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Pool" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Pool" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Pool" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Pool" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Pool" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">50 methods, 13 failed,  26 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Pool" class="hide-methods failed suite-Pool"> (hide)</a> <!-- hide-methods failed suite-Pool -->
+                      <a href="#" panel-name="suite-Pool" class="show-methods failed suite-Pool"> (show)</a> <!-- show-methods failed suite-Pool -->
+                    </span>
+                    <div class="method-list-content failed suite-Pool">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest01" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest02" class="method navigator-link" hash-for-method="test_02">test_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest02" class="method navigator-link" hash-for-method="test_02">test_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest03" class="method navigator-link" hash-for-method="test_03">test_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest03" class="method navigator-link" hash-for-method="test_03">test_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest04" class="method navigator-link" hash-for-method="test_04">test_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest05" class="method navigator-link" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest05" class="method navigator-link" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest06" class="method navigator-link" hash-for-method="test_06">test_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest07" class="method navigator-link" hash-for-method="test_07">test_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest08" class="method navigator-link" hash-for-method="test_08">test_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest09" class="method navigator-link" hash-for-method="test_09">test_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest10" class="method navigator-link" hash-for-method="test_10">test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Pool -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Pool" class="hide-methods skipped suite-Pool"> (hide)</a> <!-- hide-methods skipped suite-Pool -->
+                      <a href="#" panel-name="suite-Pool" class="show-methods skipped suite-Pool"> (show)</a> <!-- show-methods skipped suite-Pool -->
+                    </span>
+                    <div class="method-list-content skipped suite-Pool">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest01" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest01" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest02" class="method navigator-link" hash-for-method="test_02">test_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest03" class="method navigator-link" hash-for-method="test_03">test_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest03" class="method navigator-link" hash-for-method="test_03">test_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest04" class="method navigator-link" hash-for-method="test_04">test_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest04" class="method navigator-link" hash-for-method="test_04">test_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest04" class="method navigator-link" hash-for-method="test_04">test_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest05" class="method navigator-link" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest05" class="method navigator-link" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest05" class="method navigator-link" hash-for-method="test_05">test_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest06" class="method navigator-link" hash-for-method="test_06">test_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest06" class="method navigator-link" hash-for-method="test_06">test_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest06" class="method navigator-link" hash-for-method="test_06">test_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest07" class="method navigator-link" hash-for-method="test_07">test_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest07" class="method navigator-link" hash-for-method="test_07">test_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest07" class="method navigator-link" hash-for-method="test_07">test_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest08" class="method navigator-link" hash-for-method="test_08">test_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest08" class="method navigator-link" hash-for-method="test_08">test_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest08" class="method navigator-link" hash-for-method="test_08">test_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest09" class="method navigator-link" hash-for-method="test_09">test_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest09" class="method navigator-link" hash-for-method="test_09">test_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest09" class="method navigator-link" hash-for-method="test_09">test_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest10" class="method navigator-link" hash-for-method="test_10">test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest10" class="method navigator-link" hash-for-method="test_10">test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest10" class="method navigator-link" hash-for-method="test_10">test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Pool -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Pool" class="hide-methods passed suite-Pool"> (hide)</a> <!-- hide-methods passed suite-Pool -->
+                      <a href="#" panel-name="suite-Pool" class="show-methods passed suite-Pool"> (show)</a> <!-- show-methods passed suite-Pool -->
+                    </span>
+                    <div class="method-list-content passed suite-Pool">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest01" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest01" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest02" class="method navigator-link" hash-for-method="test_02">test_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest02" class="method navigator-link" hash-for-method="test_02">test_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest03" class="method navigator-link" hash-for-method="test_03">test_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest04" class="method navigator-link" hash-for-method="test_04">test_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest06" class="method navigator-link" hash-for-method="test_06">test_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest07" class="method navigator-link" hash-for-method="test_07">test_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest08" class="method navigator-link" hash-for-method="test_08">test_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest09" class="method navigator-link" hash-for-method="test_09">test_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Pool" title="com.browserstack.suite.SuiteTest10" class="method navigator-link" hash-for-method="test_10">test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Pool -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Pool" class="panel Pool">
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest07</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07">
+                  </a> <!-- test_07 -->
+                  <span class="method-name">test_07</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest07.test_07(SuiteTest07.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest05</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05">
+                  </a> <!-- test_05 -->
+                  <span class="method-name">test_05</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;1&quot;]/p
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 11956, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ef37758a5f7049748273095a0fa...}
+Session ID: ef37758a5f7049748273095a0fa8f1d734ce1543
+*** Element info: {Using=xpath, value=//*[@id=&quot;1&quot;]/p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.browserstack.suite.SuiteTest05.test_05(SuiteTest05.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05">
+                  </a> <!-- test_05 -->
+                  <span class="method-name">test_05</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest05.test_05(SuiteTest05.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest09</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09">
+                  </a> <!-- test_09 -->
+                  <span class="method-name">test_09</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest09.test_09(SuiteTest09.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02">
+                  </a> <!-- test_02 -->
+                  <span class="method-name">test_02</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest02.test_02(SuiteTest02.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02">
+                  </a> <!-- test_02 -->
+                  <span class="method-name">test_02</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest02.test_02(SuiteTest02.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest08</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08">
+                  </a> <!-- test_08 -->
+                  <span class="method-name">test_08</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest08.test_08(SuiteTest08.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03">
+                  </a> <!-- test_03 -->
+                  <span class="method-name">test_03</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest03.test_03(SuiteTest03.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03">
+                  </a> <!-- test_03 -->
+                  <span class="method-name">test_03</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest03.test_03(SuiteTest03.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10">
+                  </a> <!-- test_10 -->
+                  <span class="method-name">test_10</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest10.test_10(SuiteTest10.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest04</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04">
+                  </a> <!-- test_04 -->
+                  <span class="method-name">test_04</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest04.test_04(SuiteTest04.java:20)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest01.test_01(SuiteTest01.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest06</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06">
+                  </a> <!-- test_06 -->
+                  <span class="method-name">test_06</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.browserstack.suite.SuiteTest06.test_06(SuiteTest06.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-failed -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest07</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07">
+                  </a> <!-- test_07 -->
+                  <span class="method-name">test_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07">
+                  </a> <!-- test_07 -->
+                  <span class="method-name">test_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07">
+                  </a> <!-- test_07 -->
+                  <span class="method-name">test_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest05</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05">
+                  </a> <!-- test_05 -->
+                  <span class="method-name">test_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05">
+                  </a> <!-- test_05 -->
+                  <span class="method-name">test_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05">
+                  </a> <!-- test_05 -->
+                  <span class="method-name">test_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest09</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09">
+                  </a> <!-- test_09 -->
+                  <span class="method-name">test_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09">
+                  </a> <!-- test_09 -->
+                  <span class="method-name">test_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09">
+                  </a> <!-- test_09 -->
+                  <span class="method-name">test_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02">
+                  </a> <!-- test_02 -->
+                  <span class="method-name">test_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest08</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08">
+                  </a> <!-- test_08 -->
+                  <span class="method-name">test_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08">
+                  </a> <!-- test_08 -->
+                  <span class="method-name">test_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08">
+                  </a> <!-- test_08 -->
+                  <span class="method-name">test_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03">
+                  </a> <!-- test_03 -->
+                  <span class="method-name">test_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03">
+                  </a> <!-- test_03 -->
+                  <span class="method-name">test_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10">
+                  </a> <!-- test_10 -->
+                  <span class="method-name">test_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10">
+                  </a> <!-- test_10 -->
+                  <span class="method-name">test_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10">
+                  </a> <!-- test_10 -->
+                  <span class="method-name">test_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest04</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04">
+                  </a> <!-- test_04 -->
+                  <span class="method-name">test_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04">
+                  </a> <!-- test_04 -->
+                  <span class="method-name">test_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04">
+                  </a> <!-- test_04 -->
+                  <span class="method-name">test_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest06</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06">
+                  </a> <!-- test_06 -->
+                  <span class="method-name">test_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06">
+                  </a> <!-- test_06 -->
+                  <span class="method-name">test_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06">
+                  </a> <!-- test_06 -->
+                  <span class="method-name">test_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-skipped -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest07</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07">
+                  </a> <!-- test_07 -->
+                  <span class="method-name">test_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest09</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09">
+                  </a> <!-- test_09 -->
+                  <span class="method-name">test_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02">
+                  </a> <!-- test_02 -->
+                  <span class="method-name">test_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02">
+                  </a> <!-- test_02 -->
+                  <span class="method-name">test_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest08</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08">
+                  </a> <!-- test_08 -->
+                  <span class="method-name">test_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03">
+                  </a> <!-- test_03 -->
+                  <span class="method-name">test_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10">
+                  </a> <!-- test_10 -->
+                  <span class="method-name">test_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest04</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04">
+                  </a> <!-- test_04 -->
+                  <span class="method-name">test_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01">
+                  </a> <!-- test_01 -->
+                  <span class="method-name">test_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+          <div class="suite-Pool-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.suite.SuiteTest06</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06">
+                  </a> <!-- test_06 -->
+                  <span class="method-name">test_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Pool-class-passed -->
+        </div> <!-- panel Pool -->
+        <div panel-name="test-xml-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/eoin/Desktop/testng-browserstack/config/suite.testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Pool&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;PoolTestChrome&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestChrome --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;PoolTestFirefox&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestFirefox --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;PoolTestIE&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;ie&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestIE --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;PoolTestEdge&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestEdge --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;PoolTestOpera&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;opera&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestOpera --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;PoolTestEdge(failed)&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_07&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest07 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_05&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest05 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_09&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest09 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest02 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_08&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest08 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_03&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest03 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_04&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest04 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_10&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest10 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_01&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest01 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_06&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest06 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestEdge(failed) --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;PoolTestChrome(failed)&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_07&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest07 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_05&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest05 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_09&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest09 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_02&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest02 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_08&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest08 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_03&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest03 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_04&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest04 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_10&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest10 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest01 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_06&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest06 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestChrome(failed) --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;PoolTestIE(failed)&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;ie&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_07&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest07 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_05&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest05 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_09&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest09 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_02&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest02 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_08&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest08 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_03&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest03 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_04&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest04 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_10&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest10 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_01&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest01 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_06&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest06 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestIE(failed) --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;PoolTestFirefox(failed)&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest07 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_05&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest05 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest09 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest02 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest08 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest10 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest04 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest03 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest01 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest06 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestFirefox(failed) --&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;PoolTestOpera(failed)&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;opera&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;suite.conf.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest07&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_07&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest07 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest05&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_05&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest05 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest09&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_09&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest09 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest02&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_02&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest02 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest08&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_08&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest08 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest03&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_03&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest03 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest04&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_04&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest04 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest10&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_10&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest10 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest01&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_01&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest01 --&gt;
+      &lt;class name=&quot;com.browserstack.suite.SuiteTest06&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test_06&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.browserstack.suite.SuiteTest06 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PoolTestOpera(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Pool --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Pool</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PoolTestChrome (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestFirefox (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestIE (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestEdge (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestOpera (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestEdge(failed) (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestChrome(failed) (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestIE(failed) (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestFirefox(failed) (10 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PoolTestOpera(failed) (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Pool</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Pool</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Pool');
+function tableData_Pool() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(50);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_10')
+data.setCell(0, 2, 'com.browserstack.suite.SuiteTest10')
+data.setCell(0, 3, 3834);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_02')
+data.setCell(1, 2, 'com.browserstack.suite.SuiteTest02')
+data.setCell(1, 3, 3400);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_06')
+data.setCell(2, 2, 'com.browserstack.suite.SuiteTest06')
+data.setCell(2, 3, 3137);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_08')
+data.setCell(3, 2, 'com.browserstack.suite.SuiteTest08')
+data.setCell(3, 3, 3119);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_02')
+data.setCell(4, 2, 'com.browserstack.suite.SuiteTest02')
+data.setCell(4, 3, 3060);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_09')
+data.setCell(5, 2, 'com.browserstack.suite.SuiteTest09')
+data.setCell(5, 3, 2984);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_01')
+data.setCell(6, 2, 'com.browserstack.suite.SuiteTest01')
+data.setCell(6, 3, 2878);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_01')
+data.setCell(7, 2, 'com.browserstack.suite.SuiteTest01')
+data.setCell(7, 3, 2868);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_04')
+data.setCell(8, 2, 'com.browserstack.suite.SuiteTest04')
+data.setCell(8, 3, 2636);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test_03')
+data.setCell(9, 2, 'com.browserstack.suite.SuiteTest03')
+data.setCell(9, 3, 2581);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test_07')
+data.setCell(10, 2, 'com.browserstack.suite.SuiteTest07')
+data.setCell(10, 3, 2572);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_05')
+data.setCell(11, 2, 'com.browserstack.suite.SuiteTest05')
+data.setCell(11, 3, 2503);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test_08')
+data.setCell(12, 2, 'com.browserstack.suite.SuiteTest08')
+data.setCell(12, 3, 1608);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_04')
+data.setCell(13, 2, 'com.browserstack.suite.SuiteTest04')
+data.setCell(13, 3, 1564);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_07')
+data.setCell(14, 2, 'com.browserstack.suite.SuiteTest07')
+data.setCell(14, 3, 1519);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_03')
+data.setCell(15, 2, 'com.browserstack.suite.SuiteTest03')
+data.setCell(15, 3, 1406);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_06')
+data.setCell(16, 2, 'com.browserstack.suite.SuiteTest06')
+data.setCell(16, 3, 1298);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_02')
+data.setCell(17, 2, 'com.browserstack.suite.SuiteTest02')
+data.setCell(17, 3, 749);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_03')
+data.setCell(18, 2, 'com.browserstack.suite.SuiteTest03')
+data.setCell(18, 3, 650);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_09')
+data.setCell(19, 2, 'com.browserstack.suite.SuiteTest09')
+data.setCell(19, 3, 541);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test_02')
+data.setCell(20, 2, 'com.browserstack.suite.SuiteTest02')
+data.setCell(20, 3, 509);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test_05')
+data.setCell(21, 2, 'com.browserstack.suite.SuiteTest05')
+data.setCell(21, 3, 487);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test_01')
+data.setCell(22, 2, 'com.browserstack.suite.SuiteTest01')
+data.setCell(22, 3, 456);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test_10')
+data.setCell(23, 2, 'com.browserstack.suite.SuiteTest10')
+data.setCell(23, 3, 398);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test_07')
+data.setCell(24, 2, 'com.browserstack.suite.SuiteTest07')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test_09')
+data.setCell(25, 2, 'com.browserstack.suite.SuiteTest09')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test_05')
+data.setCell(26, 2, 'com.browserstack.suite.SuiteTest05')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test_06')
+data.setCell(27, 2, 'com.browserstack.suite.SuiteTest06')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test_09')
+data.setCell(28, 2, 'com.browserstack.suite.SuiteTest09')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'test_03')
+data.setCell(29, 2, 'com.browserstack.suite.SuiteTest03')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'test_10')
+data.setCell(30, 2, 'com.browserstack.suite.SuiteTest10')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'test_01')
+data.setCell(31, 2, 'com.browserstack.suite.SuiteTest01')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test_08')
+data.setCell(32, 2, 'com.browserstack.suite.SuiteTest08')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'test_04')
+data.setCell(33, 2, 'com.browserstack.suite.SuiteTest04')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'test_07')
+data.setCell(34, 2, 'com.browserstack.suite.SuiteTest07')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'test_10')
+data.setCell(35, 2, 'com.browserstack.suite.SuiteTest10')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test_05')
+data.setCell(36, 2, 'com.browserstack.suite.SuiteTest05')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'test_02')
+data.setCell(37, 2, 'com.browserstack.suite.SuiteTest02')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test_08')
+data.setCell(38, 2, 'com.browserstack.suite.SuiteTest08')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'test_09')
+data.setCell(39, 2, 'com.browserstack.suite.SuiteTest09')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'test_04')
+data.setCell(40, 2, 'com.browserstack.suite.SuiteTest04')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'test_06')
+data.setCell(41, 2, 'com.browserstack.suite.SuiteTest06')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'test_03')
+data.setCell(42, 2, 'com.browserstack.suite.SuiteTest03')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'test_04')
+data.setCell(43, 2, 'com.browserstack.suite.SuiteTest04')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'test_07')
+data.setCell(44, 2, 'com.browserstack.suite.SuiteTest07')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'test_10')
+data.setCell(45, 2, 'com.browserstack.suite.SuiteTest10')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'test_01')
+data.setCell(46, 2, 'com.browserstack.suite.SuiteTest01')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'test_05')
+data.setCell(47, 2, 'com.browserstack.suite.SuiteTest05')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'test_06')
+data.setCell(48, 2, 'com.browserstack.suite.SuiteTest06')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'test_08')
+data.setCell(49, 2, 'com.browserstack.suite.SuiteTest08')
+data.setCell(49, 3, 0);
+window.suiteTableData['Pool']= { tableData: data, tableDiv: 'times-div-Pool'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <div id="times-div-Pool">
+              </div> <!-- times-div-Pool -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Pool</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Pool" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_02</span>
+                <span class="method-start">4449 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_03</span>
+                <span class="method-start">4449 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5229 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5856 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_02</span>
+                <span class="method-start">5966 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">6220 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">6855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_05</span>
+                <span class="method-start">8073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8074 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">8076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_06</span>
+                <span class="method-start">8180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8181 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">8183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_07</span>
+                <span class="method-start">8306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8310 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">8312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_08</span>
+                <span class="method-start">8422 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">8425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_09</span>
+                <span class="method-start">8535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8536 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, ie)</span>
+                <span class="method-start">8549 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_04</span>
+                <span class="method-start">8562 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8563 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_10</span>
+                <span class="method-start">8741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8742 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">9084 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9367 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">10448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10576 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_04</span>
+                <span class="method-start">10576 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">10581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10689 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_05</span>
+                <span class="method-start">10689 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">10691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_06</span>
+                <span class="method-start">10822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10823 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">10824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_07</span>
+                <span class="method-start">10926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10927 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">10928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_08</span>
+                <span class="method-start">11029 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_03</span>
+                <span class="method-start">11030 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">11032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11123 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_09</span>
+                <span class="method-start">11123 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, edge)</span>
+                <span class="method-start">11129 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11301 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_10</span>
+                <span class="method-start">11301 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11962 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_01</span>
+                <span class="method-start">12955 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">13077 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13412 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_04</span>
+                <span class="method-start">13951 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">13952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_05</span>
+                <span class="method-start">14058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14059 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">14060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_06</span>
+                <span class="method-start">14166 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14167 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">14168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_07</span>
+                <span class="method-start">14265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14267 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">14268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_08</span>
+                <span class="method-start">14367 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">14369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_09</span>
+                <span class="method-start">14461 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14462 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(suite.conf.json, chrome)</span>
+                <span class="method-start">14463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14555 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_10</span>
+                <span class="method-start">14555 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">14913 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15262 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_03</span>
+                <span class="method-start">15262 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16595 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">16595 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_02</span>
+                <span class="method-start">16914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_03</span>
+                <span class="method-start">18622 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">18657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18658 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21203 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">22185 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_02</span>
+                <span class="method-start">29559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_02</span>
+                <span class="method-start">31081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32619 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">33201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">33564 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_03</span>
+                <span class="method-start">33734 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_01</span>
+                <span class="method-start">33942 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest03</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34384 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">36285 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36810 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_04</span>
+                <span class="method-start">37213 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">37841 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest04</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_04</span>
+                <span class="method-start">38090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39654 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39850 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">40651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">41553 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_05</span>
+                <span class="method-start">43891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_05</span>
+                <span class="method-start">44316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44379 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_06</span>
+                <span class="method-start">44672 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_07</span>
+                <span class="method-start">45657 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">46167 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest05</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46820 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47810 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">48062 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48229 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">48867 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, firefox)</span>
+                <span class="method-start">49177 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_08</span>
+                <span class="method-start">52670 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_06</span>
+                <span class="method-start">55566 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55789 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_09</span>
+                <span class="method-start">56205 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest06</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56865 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">58577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59189 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_07</span>
+                <span class="method-start">61659 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_10</span>
+                <span class="method-start">62059 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest07</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63179 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(suite.conf.json, opera)</span>
+                <span class="method-start">64529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">65894 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest09</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_09</span>
+                <span class="method-start">72215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72757 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_08</span>
+                <span class="method-start">74143 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest10</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_10</span>
+                <span class="method-start">75303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75702 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.browserstack.suite.SuiteTest08</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75752 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

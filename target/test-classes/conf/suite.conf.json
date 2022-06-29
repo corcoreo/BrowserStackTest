@@ -1,0 +1,29 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "eoincorcoran_cx2b96",
+  "key": "Km8rwJxg7Nao5fwfPPzp",
+
+  "capabilities": {
+    "build": "browserstack-build-1",
+    "name": "suite_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "opera": {
+      "browser": "opera"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    },
+    "edge": {
+      "browser": "edge"
+    }
+  }
+}

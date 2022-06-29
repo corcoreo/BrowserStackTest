@@ -1,0 +1,981 @@
+<html>
+<head>
+<title>TestNG:  PoolTestSafari</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PoolTestSafari</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/9/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 29 13:40:12 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>551 seconds (551812 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest07.tearDown()'><b>tearDown</b><br>Test class: com.browserstack.suite.SuiteTest07</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: df7a3d35acf9516131b185a8cb4...}
+Session ID: df7a3d35acf9516131b185a8cb4c108b6b2b7a7f
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace960007564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace960007564'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: df7a3d35acf9516131b185a8cb4...}
+Session ID: df7a3d35acf9516131b185a8cb4c108b6b2b7a7f
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.browserstack.suite.SuiteTest07@543c6f6d</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest08.tearDown()'><b>tearDown</b><br>Test class: com.browserstack.suite.SuiteTest08</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: fde13866f0e95a6c1d0b8678747...}
+Session ID: fde13866f0e95a6c1d0b8678747ae075def45847
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace115757482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace115757482'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: fde13866f0e95a6c1d0b8678747...}
+Session ID: fde13866f0e95a6c1d0b8678747ae075def45847
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.browserstack.suite.SuiteTest08@13eb8acf</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest09.tearDown()'><b>tearDown</b><br>Test class: com.browserstack.suite.SuiteTest09</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: b2d3b7ef7a61a7f95a44a663e29...}
+Session ID: b2d3b7ef7a61a7f95a44a663e29fd21c8254ebc6
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377666771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377666771'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: b2d3b7ef7a61a7f95a44a663e29...}
+Session ID: b2d3b7ef7a61a7f95a44a663e29fd21c8254ebc6
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:564)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at com.browserstack.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Cannot decode response content: 
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 16 more
+Caused by: org.openqa.selenium.json.JsonException: java.io.EOFException: End of input at line 1 column 1 path $
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:172)
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:72)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:136)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:122)
+	at org.openqa.selenium.json.Json.toType(Json.java:62)
+	at org.openqa.selenium.json.Json.toType(Json.java:52)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	... 19 more
+Caused by: java.io.EOFException: End of input at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1401)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1576)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)
+	at org.openqa.selenium.json.JsonInput.lambda$peek$0(JsonInput.java:73)
+	at org.openqa.selenium.json.JsonInput.execute(JsonInput.java:168)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.browserstack.suite.SuiteTest09@51c8530f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest01.test_01()'><b>test_01</b><br>Test class: com.browserstack.suite.SuiteTest01</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-231.browserstack.com&apos;, ip: &apos;10.144.208.231&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: 5b940ecf85cce11e77cfe2cc82a...}
+Session ID: 5b940ecf85cce11e77cfe2cc82ab494a6516eace
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest01.test_01(SuiteTest01.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943462203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace943462203'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-231.browserstack.com&apos;, ip: &apos;10.144.208.231&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: 5b940ecf85cce11e77cfe2cc82a...}
+Session ID: 5b940ecf85cce11e77cfe2cc82ab494a6516eace
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest01.test_01(SuiteTest01.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest01@74a10858</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest02.test_02()'><b>test_02</b><br>Test class: com.browserstack.suite.SuiteTest02</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-224.browserstack.com&apos;, ip: &apos;10.144.208.224&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: f85eee9b3f8c496077498a1163d...}
+Session ID: f85eee9b3f8c496077498a1163d48d2c7a24e552
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest02.test_02(SuiteTest02.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704590490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace704590490'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-224.browserstack.com&apos;, ip: &apos;10.144.208.224&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: f85eee9b3f8c496077498a1163d...}
+Session ID: f85eee9b3f8c496077498a1163d48d2c7a24e552
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest02.test_02(SuiteTest02.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest02@23fe1d71</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest03.test_03()'><b>test_03</b><br>Test class: com.browserstack.suite.SuiteTest03</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-209-32.browserstack.com&apos;, ip: &apos;10.144.209.32&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 6.0.5, webdriver.remote.sessionid: 4c619fb3a64b0d1412bf56cecfc...}
+Session ID: 4c619fb3a64b0d1412bf56cecfcf223cd8dbbedf
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest03.test_03(SuiteTest03.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131460922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131460922'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-209-32.browserstack.com&apos;, ip: &apos;10.144.209.32&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.7.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 6.0.5, webdriver.remote.sessionid: 4c619fb3a64b0d1412bf56cecfc...}
+Session ID: 4c619fb3a64b0d1412bf56cecfcf223cd8dbbedf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest03.test_03(SuiteTest03.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest03@28ac3dc3</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest04.test_04()'><b>test_04</b><br>Test class: com.browserstack.suite.SuiteTest04</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-234.browserstack.com&apos;, ip: &apos;10.144.208.234&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.2.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 6.2.8, webdriver.remote.sessionid: c1ff2009dd1830b0c15a3e6e0c6...}
+Session ID: c1ff2009dd1830b0c15a3e6e0c60a76d4f5ee206
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest04.test_04(SuiteTest04.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1951841610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1951841610'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-234.browserstack.com&apos;, ip: &apos;10.144.208.234&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=6.2.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 6.2.8, webdriver.remote.sessionid: c1ff2009dd1830b0c15a3e6e0c6...}
+Session ID: c1ff2009dd1830b0c15a3e6e0c60a76d4f5ee206
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest04.test_04(SuiteTest04.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest04@32eebfca</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest05.test_05()'><b>test_05</b><br>Test class: com.browserstack.suite.SuiteTest05</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-252.browserstack.com&apos;, ip: &apos;10.144.208.252&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: dfd6a367202ef4b6553824c4196...}
+Session ID: dfd6a367202ef4b6553824c41960473b2b418d00
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest05.test_05(SuiteTest05.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1291065809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1291065809'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-252.browserstack.com&apos;, ip: &apos;10.144.208.252&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: dfd6a367202ef4b6553824c4196...}
+Session ID: dfd6a367202ef4b6553824c41960473b2b418d00
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest05.test_05(SuiteTest05.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest05@4e718207</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest06.test_06()'><b>test_06</b><br>Test class: com.browserstack.suite.SuiteTest06</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;mac-10-144-208-152.browserstack.com&apos;, ip: &apos;10.144.208.152&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.6.8&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: EventFiringWebDriver (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 5.1.9, webdriver.remote.sessionid: eee3edc42caee5e006ec78c95d8...}
+Session ID: eee3edc42caee5e006ec78c95d8c522ad8bc6061
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest06.test_06(SuiteTest06.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477683384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477683384'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;mac-10-144-208-152.browserstack.com&apos;, ip: &apos;10.144.208.152&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.6.8&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: EventFiringWebDriver (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 5.1.9, webdriver.remote.sessionid: eee3edc42caee5e006ec78c95d8...}
+Session ID: eee3edc42caee5e006ec78c95d8c522ad8bc6061
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest06.test_06(SuiteTest06.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>200</td>
+<td>com.browserstack.suite.SuiteTest06@1d371b2d</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest07.test_07()'><b>test_07</b><br>Test class: com.browserstack.suite.SuiteTest07</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-51.browserstack.com&apos;, ip: &apos;10.144.208.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: df7a3d35acf9516131b185a8cb4...}
+Session ID: df7a3d35acf9516131b185a8cb4c108b6b2b7a7f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest07.test_07(SuiteTest07.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205999986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1205999986'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-51.browserstack.com&apos;, ip: &apos;10.144.208.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: df7a3d35acf9516131b185a8cb4...}
+Session ID: df7a3d35acf9516131b185a8cb4c108b6b2b7a7f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest07.test_07(SuiteTest07.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>105</td>
+<td>com.browserstack.suite.SuiteTest07@543c6f6d</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest08.test_08()'><b>test_08</b><br>Test class: com.browserstack.suite.SuiteTest08</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-197.browserstack.com&apos;, ip: &apos;10.144.208.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: fde13866f0e95a6c1d0b8678747...}
+Session ID: fde13866f0e95a6c1d0b8678747ae075def45847
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest08.test_08(SuiteTest08.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574486340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace574486340'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-197.browserstack.com&apos;, ip: &apos;10.144.208.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: fde13866f0e95a6c1d0b8678747...}
+Session ID: fde13866f0e95a6c1d0b8678747ae075def45847
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest08.test_08(SuiteTest08.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>108</td>
+<td>com.browserstack.suite.SuiteTest08@13eb8acf</td></tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest09.test_09()'><b>test_09</b><br>Test class: com.browserstack.suite.SuiteTest09</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-212.browserstack.com&apos;, ip: &apos;10.144.208.212&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: b2d3b7ef7a61a7f95a44a663e29...}
+Session ID: b2d3b7ef7a61a7f95a44a663e29fd21c8254ebc6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest09.test_09(SuiteTest09.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1841336634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1841336634'><pre>org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;mac-10-144-208-212.browserstack.com&apos;, ip: &apos;10.144.208.212&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.1.8, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;Eoins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:10ca:dd1:f9f8:be54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {browserName: safari, cssSelectorsEnabled: true, javascriptEnabled: true, platform: MAC, platformName: MAC, secureSsl: true, takesScreenshot: true, version: 7.1.8, webdriver.remote.sessionid: b2d3b7ef7a61a7f95a44a663e29...}
+Session ID: b2d3b7ef7a61a7f95a44a663e29fd21c8254ebc6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)
+	at com.browserstack.suite.SuiteTest09.test_09(SuiteTest09.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>90</td>
+<td>com.browserstack.suite.SuiteTest09@51c8530f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.browserstack.suite.SuiteTest10.test_10()'><b>test_10</b><br>Test class: com.browserstack.suite.SuiteTest10</td>
+<td></td>
+<td>0</td>
+<td>com.browserstack.suite.SuiteTest10@7403c468</td></tr>
+</table><p>
+</body>
+</html>
